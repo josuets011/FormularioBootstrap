@@ -6,83 +6,143 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>FormularioBootstrap</title>
+    <title>AtividadeBootstrap</title>
 </head>
 <body>
-    <div class="container">
-      <br>
-        <h1>Introdução ao Bootstrap</h1>
-        <form class="needs-validation" novalidate>
-            <div class="form-row">
-              <div class="col-md-7 mb-2">
-                <label for="validationTooltip01">Nome:</label>
-                <input type="text" class="form-control" placeholder="" value="" required>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Formulário</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Outras opções
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Relatórios</a>
+                <a class="dropdown-item" href="#">Gráficos</a>
                 
               </div>
-              <div class="col-md-5 mb-2">
-                <label for="validationTooltip02">Data de Nascimento:</label>
-                <input type="date" class="form-control"  placeholder="dd/mm/aaaa">
-                <div class="valid-tooltip">
-                  Tudo certo!
-                </div>
-              </div>
-              
-            </div>
-            <div class="form-row">
-              <div class="col-md-6 mb-3">
-                <label for="validationTooltip03">Nome Mãe:</label>
-                <input type="text" class="form-control"  placeholder="Maria" required>
-                
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="validationTooltip04">Nome Pai:</label>
-                <input type="text" class="form-control"  placeholder="José" >
-                <div class="invalid-tooltip">
-                  Por favor, informe um pai válido.
-                </div>
-              </div>
-              <div class="col-md-4 mb-3">
-                <label for="validationTooltip05">Cidade</label>
-                <!-- <i class="bi bi-airplane"></i> -->
-                <input type="text" class="form-control">          
-              </div>
-              <div class="col-md-5 mb-3">
-                <label for="validationTooltip05">Curso:</label>
-                <select name="selecionar curso" class="form-control">
-                  <option value="">Selecionar Curso</option>
-                  <option value="enf">Enfermagem</option>
-                  <option value="info">Informática</option>
-                  <option value="com">Comércio</option>
-                  <option value="adm">Administração</option>
-                </select>         
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="validationTooltip05">Turma:</label>
-                <input type="sele" class="form-control" >          
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="validationTooltip05">Endereço:</label>
-                <input type="sele" class="form-control">          
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="validationTooltip05">Complemento:</label>
-                <input type="sele" class="form-control">          
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="validationTooltip05">Bairro:</label>
-                <input type="sele" class="form-control">          
-              </div>
-              <div class="col-md-3 mb-3">
-                <label for="validationTooltip05">CEP:</label>
-                <input type="sele" class="form-control">          
-              </div>
-            </div>
-            <button class="btn btn-primary" type="submit">Enviar Dados</button>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Buscar">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
           </form>
-        
+        </div>
+      </nav>
 
+    <div class="container">
+        <br>
+          <h1>Introdução ao Bootstrap</h1>
+          <form class="needs-validation" novalidate>
+              <div class="form-row">
+                <div class="col-md-7 mb-2">
+                  <label for="validationTooltip01">Nome:</label>
+                  <input type="text" class="form-control" placeholder="" value="" required>
+                  
+                </div>
+                <div class="col-md-5 mb-2">
+                  <label for="validationTooltip02">Data de Nascimento:</label>
+                  <input type="date" class="form-control"  placeholder="dd/mm/aaaa">
+                  <div class="valid-tooltip">
+                    Tudo certo!
+                  </div>
+                </div>
+                
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="validationTooltip03">Nome Mãe:</label>
+                  <input type="text" class="form-control"  placeholder="Maria" required>
+                  
+                </div>
+                <div class="col-md-6 mb-3">
+                  <label for="validationTooltip04">Nome Pai:</label>
+                  <input type="text" class="form-control"  placeholder="José" >
+                  <div class="invalid-tooltip">
+                    Por favor, informe um pai válido.
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationTooltip05">Cidade</label>
+                  <!-- <i class="bi bi-airplane"></i> -->
+                  <input type="text" class="form-control" id="cidade">          
+                </div>
+                <div class="col-md-5 mb-3">
+                  <label for="validationTooltip05">Curso:</label>
+                  <select name="selecionar curso" class="form-control">
+                    <option value="">Selecionar Curso</option>
+                    <option value="enf">Enfermagem</option>
+                    <option value="info">Informática</option>
+                    <option value="com">Comércio</option>
+                    <option value="adm">Administração</option>
+                  </select>         
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationTooltip05">Turma:</label>
+                  <select name="selecionar curso" class="form-control">
+                    <option value="enf">1° Ano</option>
+                    <option value="info">2° Ano</option>
+                    <option value="com">3° Ano</option>
+                  </select>
+                           
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationTooltip05">Endereço:</label>
+                  <input type="text" class="form-control" id="endereco">          
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationTooltip05">Complemento:</label>
+                  <input type="sele" class="form-control" id="complemento">          
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationTooltip05">Bairro:</label>
+                  <input type="sele" class="form-control" id="bairro">          
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationTooltip05">CEP:</label>
+                  <input type="text" class="form-control" id="cep" placeholder="00000-000" onblur="buscaCEP(this.value);">          
+                </div>
+              </div>
 
-        
-    </div>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalLongoExemplo">
+               Enviar Dados
+              </button>
+              <div class="modal fade" id="ModalLongoExemplo" tabindex="-1" role="dialog" aria-labelledby="TituloModalLongoExemplo" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="TituloModalLongoExemplo">Usando Modal</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      Deseja realmente salvar as informações?
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="button" class="btn btn-primary">Salvar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
